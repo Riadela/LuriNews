@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.95" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitoloAnteprima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textStyle="bold|italic" 
+                android:textSize="50dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp" >
+            </View>
+
+            <TextView
+                android:id="@+id/tvNotiziaAnteprima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bPubblicaNotizia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pubblica la tua Notizia" />
+
+</LinearLayout>

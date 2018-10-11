@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvNIdNotizia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvNTitolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="titolooo"
+                android:textSize="50dp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pubblicato da "
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tvNIDUtente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IDUtente"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" il "
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tvNData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02/02/02"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp" >
+            </View>
+
+            <TextView
+                android:id="@+id/tvNTesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testooo" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A " />
+
+                <TextView
+                    android:id="@+id/tvNNumeroInteressante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" persone interessa questa notizia." />
+
+                <Button
+                    android:id="@+id/bNInteressante"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/interessante" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Nll0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visualizza " />
+
+                <TextView
+                    android:id="@+id/tvNNumeroCommento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#0000ff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" commenti... " />
+            </LinearLayout>
+
+            <!-- ******************* QUI INIZIANO I COMMENTI ******************* -->
+
+            <RelativeLayout
+                android:id="@+id/Nll1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvNIDUtente1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="utente"
+                    android:textColor="#0000ff"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/tvNCommento1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tvNIDUtente1"
+                    android:text="testo" />
+
+                <TextView
+                    android:id="@+id/tvNData1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNCommento1"
+                    android:text="data" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Nll2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvNIDUtente2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="utente"
+                    android:textColor="#0000ff"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/tvNCommento2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tvNIDUtente2"
+                    android:text="testo" />
+
+                <TextView
+                    android:id="@+id/tvNData2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNCommento2"
+                    android:text="data" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Nll3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvNIDUtente3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="utente"
+                    android:textColor="#0000ff"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/tvNCommento3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tvNIDUtente3"
+                    android:text="testo" />
+
+                <TextView
+                    android:id="@+id/tvNData3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNCommento3"
+                    android:text="data" />
+            </RelativeLayout>
+
+            <!-- QUI FINISCONO I COMMENTI -->
+
+
+            <!-- ********** QUI INIZIANO I BOTTONO COMMENTA, YES E NO ********* -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bNCommento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Commenta" />
+
+                <Button
+                    android:id="@+id/bNNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="No" />
+
+                <TextView
+                    android:id="@+id/tvNNumeroNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/bNNo"
+                    android:layout_alignBottom="@+id/bNNo"
+                    android:layout_toLeftOf="@+id/bNNo"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bNYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tvNNumeroNo"
+                    android:text="Yes" />
+
+                <TextView
+                    android:id="@+id/tvNNumeroYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/bNYes"
+                    android:layout_alignBottom="@+id/bNYes"
+                    android:layout_toLeftOf="@+id/bNYes"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" 
+                android:id="@+id/rlNElimina"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/bNElimina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Elimina" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

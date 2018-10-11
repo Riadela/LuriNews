@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="7dp">
+
+    <TextView
+        android:id="@+id/tvLITitoloPrimo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/tvLITestoPrimo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/tvLINumeroInteressante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+             android:layout_alignBottom="@+id/tvLINumeroInteressante"
+            android:layout_toRightOf="@+id/tvLINumeroInteressante"
+            android:src="@drawable/noninteressante" />
+
+        <TextView
+            android:id="@+id/tvLINumeroYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ivLIYes"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tvLINumeroYes"
+            android:layout_toRightOf="@+id/tvLINumeroYes"
+            android:src="@drawable/yes" />
+
+        <TextView
+            android:id="@+id/tvLINumeroNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivLIYes"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivLIYes"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ivLINo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tvLINumeroNo"
+            android:layout_toRightOf="@+id/tvLINumeroNo"
+            android:src="@drawable/no" />
+
+        <TextView
+            android:id="@+id/tvLINumeroCommenti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivLINo"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/ivLINo"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ivLICommento"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tvLINumeroCommenti"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvLINumeroCommenti"
+            android:src="@drawable/commento" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pubblicato da " />
+
+        <TextView
+            android:id="@+id/tvLIData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="data"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLIIDUtente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="utente" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvLITestoSecondo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLIIDNotizia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="5dp" >
+    </View>
+
+</LinearLayout>

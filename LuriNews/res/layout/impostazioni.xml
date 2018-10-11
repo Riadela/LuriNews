@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bIUpdatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bIUpdateIDUtente"
+        android:layout_marginTop="20dp"
+        android:text="Cambia password" />
+
+    <Button
+        android:id="@+id/bIUpdateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bIUpdatePassword"
+        android:layout_marginTop="20dp"
+        android:text="Cambia email" />
+
+    <Button
+        android:id="@+id/bILogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bIUpdateEmail"
+        android:layout_marginTop="20dp"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/bIUpdateIDUtente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Cambia username" />
+
+</RelativeLayout>

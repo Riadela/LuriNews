@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvRUtente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome utente:" />
+
+    <EditText
+        android:id="@+id/etRUtente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="Nome utente">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvRPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/etRPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvRPasswordConferma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conferma password:" />
+
+    <EditText
+        android:id="@+id/etRPasswordConferma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvREmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/etREmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="email@email.com"/>
+
+    <Button
+        android:id="@+id/bRegistrati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrati!" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvUtente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utente:" />
+
+    <EditText
+        android:id="@+id/etUtente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se non sei registrato, " />
+
+        <TextView
+            android:id="@+id/tvRegistrazione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrati!"
+            android:textColor="#0000ff" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login!" />
+
+</LinearLayout>

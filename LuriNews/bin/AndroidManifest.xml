@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jmluriad.lurinews"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jmluriad.lurinews.Welcome"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jmluriad.lurinews.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.jmluriad.lurinews.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jmluriad.lurinews.GestioneTabs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.jmluriad.lurinews.GestioneTabs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jmluriad.lurinews.ScriviNotizia"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.jmluriad.lurinews.ScriviNotizia" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jmluriad.lurinews.ScriviNotiziaAnteprima"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.jmluriad.lurinews.ScriviArticoloAnteprima"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.jmluriad.lurinews.Vota"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.jmluriad.lurinews.Login"
+            android:label="@string/app_name" >           
+        </activity>
+        <activity
+            android:name="com.jmluriad.lurinews.Registrazione"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.jmluriad.lurinews.Notizia"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.jmluriad.lurinews.Notizia" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.jmluriad.lurinews.Commento"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.jmluriad.lurinews.Impostazioni"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.jmluriad.lurinews.UpdateIDUtente"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.jmluriad.lurinews.UpdateEmail"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.jmluriad.lurinews.UpdatePassword"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.jmluriad.lurinews.Notizie"
+            android:label="@string/app_name" >
+        </activity>
+        
+    </application>
+
+</manifest>
